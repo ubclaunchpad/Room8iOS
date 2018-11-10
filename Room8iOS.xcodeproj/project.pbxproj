@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		87342BE1219774DB00529B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87342BE0219774DB00529B32 /* AppDelegate.swift */; };
-		87342BE3219774DB00529B32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87342BE2219774DB00529B32 /* ViewController.swift */; };
+		87342BE3219774DB00529B32 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87342BE2219774DB00529B32 /* WelcomeViewController.swift */; };
 		87342BE6219774DB00529B32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87342BE4219774DB00529B32 /* Main.storyboard */; };
 		87342BE8219774DE00529B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87342BE7219774DE00529B32 /* Assets.xcassets */; };
 		87342BEB219774DE00529B32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87342BE9219774DE00529B32 /* LaunchScreen.storyboard */; };
-		87342BF3219778DF00529B32 /* GoogleService-Info-4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87342BF2219778DF00529B32 /* GoogleService-Info-4.plist */; };
+		87342BF3219778DF00529B32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87342BF2219778DF00529B32 /* GoogleService-Info.plist */; };
+		87342BF521977D5000529B32 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87342BF421977D5000529B32 /* LoginViewController.swift */; };
+		87342BF721977D6400529B32 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87342BF621977D6400529B32 /* RegisterViewController.swift */; };
 		BF7852475DD6F4A46562E1A6 /* Pods_Room8iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BC771D3708225DD087188F /* Pods_Room8iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +22,14 @@
 		40A049E80E15C1875D90DB36 /* Pods-Room8iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Room8iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Room8iOS/Pods-Room8iOS.release.xcconfig"; sourceTree = "<group>"; };
 		87342BDD219774DB00529B32 /* Room8iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Room8iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87342BE0219774DB00529B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87342BE2219774DB00529B32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87342BE2219774DB00529B32 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		87342BE5219774DB00529B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87342BE7219774DE00529B32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87342BEA219774DE00529B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87342BEC219774DE00529B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87342BF2219778DF00529B32 /* GoogleService-Info-4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-4.plist"; sourceTree = "<group>"; };
+		87342BF2219778DF00529B32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		87342BF421977D5000529B32 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		87342BF621977D6400529B32 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		94BC771D3708225DD087188F /* Pods_Room8iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Room8iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F114C7C12932374654A3A3 /* Pods-Room8iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Room8iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Room8iOS/Pods-Room8iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,15 +75,41 @@
 		87342BDF219774DB00529B32 /* Room8iOS */ = {
 			isa = PBXGroup;
 			children = (
-				87342BF2219778DF00529B32 /* GoogleService-Info-4.plist */,
-				87342BE0219774DB00529B32 /* AppDelegate.swift */,
-				87342BE2219774DB00529B32 /* ViewController.swift */,
-				87342BE4219774DB00529B32 /* Main.storyboard */,
+				87342BFB21977D9000529B32 /* Controller */,
+				87342BF821977D7200529B32 /* View */,
+				87342BFA21977D8A00529B32 /* Model */,
+				87342BF2219778DF00529B32 /* GoogleService-Info.plist */,
 				87342BE7219774DE00529B32 /* Assets.xcassets */,
-				87342BE9219774DE00529B32 /* LaunchScreen.storyboard */,
 				87342BEC219774DE00529B32 /* Info.plist */,
 			);
 			path = Room8iOS;
+			sourceTree = "<group>";
+		};
+		87342BF821977D7200529B32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87342BE4219774DB00529B32 /* Main.storyboard */,
+				87342BE9219774DE00529B32 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87342BFA21977D8A00529B32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87342BFB21977D9000529B32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87342BE0219774DB00529B32 /* AppDelegate.swift */,
+				87342BE2219774DB00529B32 /* WelcomeViewController.swift */,
+				87342BF621977D6400529B32 /* RegisterViewController.swift */,
+				87342BF421977D5000529B32 /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		D8EDE1A0D3258E370ADE1B85 /* Pods */ = {
@@ -152,7 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87342BF3219778DF00529B32 /* GoogleService-Info-4.plist in Resources */,
+				87342BF3219778DF00529B32 /* GoogleService-Info.plist in Resources */,
 				87342BEB219774DE00529B32 /* LaunchScreen.storyboard in Resources */,
 				87342BE8219774DE00529B32 /* Assets.xcassets in Resources */,
 				87342BE6219774DB00529B32 /* Main.storyboard in Resources */,
@@ -222,8 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87342BE3219774DB00529B32 /* ViewController.swift in Sources */,
+				87342BF521977D5000529B32 /* LoginViewController.swift in Sources */,
+				87342BE3219774DB00529B32 /* WelcomeViewController.swift in Sources */,
 				87342BE1219774DB00529B32 /* AppDelegate.swift in Sources */,
+				87342BF721977D6400529B32 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +406,10 @@
 				DEVELOPMENT_TEAM = MM934V475K;
 				INFOPLIST_FILE = Room8iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.azizzaynutdinov.Room8iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -391,7 +426,10 @@
 				DEVELOPMENT_TEAM = MM934V475K;
 				INFOPLIST_FILE = Room8iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.azizzaynutdinov.Room8iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
