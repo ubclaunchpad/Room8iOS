@@ -27,10 +27,30 @@ class RegisterViewController: UIViewController {
         
         //Set up a new user on our Firebase database
         
-        
+        Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (user, error) in
+            
+            if error != nil {
+                print(error!)
+            } else {
+                print("Registration Successful!")
+                self.createUser(uid: self.userName.text!, firstName: self.firstName.text!, lastName: self.lastName.text!, email: self.email.text!)
+                SVProgressHUD.dismiss()
+            }
+        }
     }
     
+    // Creates a new user object in the "Users" child in Firebase
+    func createUser(uid: String, firstName: String, lastName: String, email: String) {
+    var ref: DatabaseReference!
+    ref = Database.database().reference()
+        
+    let userRef: DatabaseReference = ref.child("Users").child(uid)
     
+        userRef.setValue(["Uid": uid,
+                          "FirstName": firstName,
+                          "LastName": lastName,
+                          "Email": email])
+    }
     
     
 }
