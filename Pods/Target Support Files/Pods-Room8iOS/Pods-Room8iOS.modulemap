@@ -1,0 +1,6 @@
+framework module Pods_Room8iOS {
+  umbrella header "Pods-Room8iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
