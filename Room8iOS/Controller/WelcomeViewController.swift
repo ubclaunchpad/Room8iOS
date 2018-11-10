@@ -12,9 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
 
+    
+    @IBAction func loginAction(_ sender: Any) {
+        performSegue(withIdentifier: "loginSegue", sender: self)
+    }
+    
+    @IBAction func registerAction(_ sender: Any) {
+        performSegue(withIdentifier: "registerSegue", sender: self)
+    }
+    
 }
 

@@ -21,17 +21,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCq-pN-zrC">
                                 <rect key="frame" x="0.0" y="602" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Register"/>
                                 <connections>
-                                    <segue destination="Th4-1v-nsd" kind="show" id="5CE-xc-S0O"/>
+                                    <segue destination="Th4-1v-nsd" kind="push" id="T7x-MT-p4F"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="279-MU-Lgy">
                                 <rect key="frame" x="0.0" y="529" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="3Qv-fU-jwJ" kind="show" id="pmo-8b-CyF"/>
+                                    <segue destination="3Qv-fU-jwJ" kind="push" id="niL-HU-jXM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,18 +67,26 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSQ-WK-JSf">
-                                <rect key="frame" x="164" y="365" width="46" height="30"/>
+                                <rect key="frame" x="168" y="365" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginFirebase:" destination="3Qv-fU-jwJ" eventType="touchUpInside" id="DsM-sh-EdV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="y4C-I7-Ol9"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1y4-um-hGb"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Gn6-Cz-laP" id="wlh-pK-ijM"/>
+                        <outlet property="passwordTextField" destination="RFk-VJ-7N3" id="0xk-ii-Fmk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJH-c3-ccL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="-1014"/>
+            <point key="canvasLocation" x="1817" y="-939"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="AaS-6w-wAp">
@@ -117,9 +125,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIx-EB-dD4">
-                                <rect key="frame" x="164" y="485" width="46" height="30"/>
+                                <rect key="frame" x="159" y="485" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Register"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GkR-aq-TEA">
                                 <rect key="frame" x="71" y="389" width="246" height="30"/>
@@ -132,6 +140,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mpH-6k-dm4"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M76-Oj-Yfd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqb-8l-RTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
