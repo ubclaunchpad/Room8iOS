@@ -7,5 +7,9 @@ target 'Room8iOS' do
   # Pods for Room8iOS
 
   pod 'Firebase/Core'
+  pod 'SVProgressHUD'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'ChameleonFramework'
 
 end
