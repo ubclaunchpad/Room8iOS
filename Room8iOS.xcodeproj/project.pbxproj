@@ -15,7 +15,6 @@
 		87342BF3219778DF00529B32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87342BF2219778DF00529B32 /* GoogleService-Info.plist */; };
 		87342BF521977D5000529B32 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87342BF421977D5000529B32 /* LoginViewController.swift */; };
 		87342BF721977D6400529B32 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87342BF621977D6400529B32 /* RegisterViewController.swift */; };
-		87342BFD21978E0700529B32 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87342BFC21978E0700529B32 /* User.swift */; };
 		BF7852475DD6F4A46562E1A6 /* Pods_Room8iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BC771D3708225DD087188F /* Pods_Room8iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		87342BF2219778DF00529B32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87342BF421977D5000529B32 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		87342BF621977D6400529B32 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		87342BFC21978E0700529B32 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		94BC771D3708225DD087188F /* Pods_Room8iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Room8iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F114C7C12932374654A3A3 /* Pods-Room8iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Room8iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Room8iOS/Pods-Room8iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +97,6 @@
 		87342BFA21977D8A00529B32 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				87342BFC21978E0700529B32 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,7 +263,6 @@
 				87342BF521977D5000529B32 /* LoginViewController.swift in Sources */,
 				87342BE3219774DB00529B32 /* WelcomeViewController.swift in Sources */,
 				87342BE1219774DB00529B32 /* AppDelegate.swift in Sources */,
-				87342BFD21978E0700529B32 /* User.swift in Sources */,
 				87342BF721977D6400529B32 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
