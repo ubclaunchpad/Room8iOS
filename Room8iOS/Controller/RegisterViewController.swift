@@ -14,7 +14,6 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet var firstName: UITextField!
     @IBOutlet var lastName: UITextField!
-    @IBOutlet var userName: UITextField!
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
     
@@ -33,7 +32,8 @@ class RegisterViewController: UIViewController {
                 print(error!)
             } else {
                 print("Registration Successful!")
-                self.createUser(uid: self.userName.text!, firstName: self.firstName.text!, lastName: self.lastName.text!, email: self.email.text!)
+                let userID = Auth.auth().currentUser!.uid
+                self.createUser(uid: userID, firstName: self.firstName.text!, lastName: self.lastName.text!, email: self.email.text!)
                 SVProgressHUD.dismiss()
             }
         }
