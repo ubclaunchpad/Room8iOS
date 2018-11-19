@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import SVProgressHUD
+import BRYXBanner
 
 class LoginViewController: UIViewController {
     
@@ -25,6 +26,10 @@ class LoginViewController: UIViewController {
             
             if error != nil {
                 print(error!)
+                SVProgressHUD.dismiss()
+                let banner = Banner(title: "Authentication Error", subtitle: "Your email and password combination is ivlavid.", image: UIImage(named: "Icon"), backgroundColor: UIColor(red:255.9/255.0, green:0/255.0, blue:0/255.0, alpha:1.000))
+                banner.dismissesOnTap = true
+                banner.show(duration: 3.0)
             } else {
                 print("Log in successful!")
                 

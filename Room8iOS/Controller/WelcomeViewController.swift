@@ -12,10 +12,10 @@ class WelcomeViewController: UIViewController {
     
     var loginViewController: UIViewController!
     var registerViewController: UIViewController!
+    var viewControllers: [UIViewController]!
+    var selectedIndex: Int = 0
     // MARK: TODO - CHANGE THIS TO WORK WITH ARRAYS OF UIBUTTONS
-    @IBOutlet var loginButton: UIButton!
-    @IBOutlet var registerButton: UIButton!
-    
+    @IBOutlet var buttons: [UIButton]!
     @IBOutlet var containerView: UIView!
     
     
@@ -27,33 +27,26 @@ class WelcomeViewController: UIViewController {
         loginViewController = storyboard.instantiateViewController(withIdentifier: "login")
         registerViewController = storyboard.instantiateViewController(withIdentifier: "register")
         
-        loginButton.isSelected = true
-        didPressLogin(loginButton)
+        viewControllers = [loginViewController, registerViewController]
+        buttons[selectedIndex].isSelected = true
+        didPress(buttons[selectedIndex])
     }
     
-    @IBAction func didPressLogin(_ sender: UIButton) {
-        registerButton.isSelected = false
-        let previousVC = loginViewController
-        previousVC?.willMove(toParent: nil)
-        previousVC?.view.removeFromSuperview()
-        previousVC?.removeFromParent()
+    @IBAction func didPress(_ sender: UIButton) {
+        let previousIndex = selectedIndex
+        selectedIndex = sender.tag
+        buttons[previousIndex].isSelected = false
+        let previousVC = viewControllers[previousIndex]
+        previousVC.willMove(toParent: nil)
+        previousVC.view.removeFromSuperview()
+        previousVC.removeFromParent()
         sender.isSelected = true
-        loginViewController.view.frame = containerView.bounds
-        containerView.addSubview(loginViewController.view)
-        loginViewController.didMove(toParent: self)
+        let vc = viewControllers[selectedIndex]
+        addChild(vc)
+        vc.view.frame = containerView.bounds
+        containerView.addSubview(vc.view)
+        vc.didMove(toParent: self)
+        
     }
-    
-    @IBAction func didPressRegister(_ sender: UIButton) {
-        loginButton.isSelected = false
-        let previousVC = registerViewController
-        previousVC?.willMove(toParent: nil)
-        previousVC?.view.removeFromSuperview()
-        previousVC?.removeFromParent()
-        sender.isSelected = true
-        registerViewController.view.frame = containerView.bounds
-        containerView.addSubview(registerViewController.view)
-        registerViewController.didMove(toParent: self)
-    }
-    
 }
 

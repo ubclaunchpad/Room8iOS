@@ -1,4 +1,5 @@
 PODS:
+  - BRYXBanner (0.8.0)
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
@@ -48,6 +49,7 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - BRYXBanner
   - ChameleonFramework
   - Firebase/Auth
   - Firebase/Core
@@ -55,6 +57,7 @@ DEPENDENCIES:
   - SVProgressHUD
 
 SPEC CHECKSUMS:
+  BRYXBanner: 406c3775789136531da6f3c98058be2f16e08a34
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Firebase: 632216af3ed7f31e3be34776947fdc7546cfb572
   FirebaseAnalytics: 388b630c15713f5dbf364071f5f3d6077fb52f4e
@@ -68,6 +71,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 53f3135ad1b28c71fd82fce5271603e13f4d0c3f
+PODFILE CHECKSUM: 52c70c4ad2636317b81c58af1d314f8db24bda4b
 
 COCOAPODS: 1.4.0

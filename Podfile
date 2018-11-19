@@ -11,5 +11,6 @@ target 'Room8iOS' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'ChameleonFramework'
+  pod 'BRYXBanner'
 
 end
